@@ -1,7 +1,7 @@
 # vc
 Command line value conversions
 
-First iteration is just going to convert between number systems used by programmers.  For exampple, show the different represntations for `1234:
+First iteration is just going to convert between number systems used by programmers.  For exampple, show the different represntations for `1234`:
 
 ```
 $ vc 1234
