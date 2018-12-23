@@ -6,6 +6,12 @@ use prettytable::Table;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
+    if args.len() != 2 {
+        println!("ERROR!  Input value required.");
+        println!("\tValue with no prefix will be treated as a deicimal");
+        println!("\tValue with a 0x prefix will be treated as hex");
+        return;
+    }
     let mut val = args[1].clone();
     let mut radix = 10;
     if val.contains("0x") {
